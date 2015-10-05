@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+
+</head>
+<body>
+
+<h1>Generador de partidos de izquierdas</h1>
+<p>¡Están de moda! ¿Por qué no tener el tuyo propio? ¡Crea tu propio partido de izquierdas, fácil y rápido!</p>
+
+<div id="partidoBlock" style="display: none;" >
+
+
+  <p>Y tu nuevo partido de izquierdas es: </p>
+  <h1 id="partido"></h1>
+
+</div>
+
+<input id="generate" type="button" value="Generar partido" onclick="generate();" />
+
+
+
+
+<h5>Creado por <a href="http://twitter.com/jmml97"> @jmml97</a></h5>
+<script>
+
+  var word1 = ["Ahora", "En común", "Podemos", "Unidos", "Venceremos", "A la Moncloa", "Juntos, ", "Ganemos", "Al frente" ];
+  var word2 = ["la izquierda", "juntos", "sí se puede", "por la democracia", "sí que se puede", "por los trabajadores", "es posible",
+"en común", "toma la palabra" ];
+
+$(document).ready(function() {
+  $("#generate").click(function(){
+      $("#partidoBlock").fadeIn("slow");
+  });
+  });
+
+
+
+  function generate(){
+    var firstWord = word1[Math.floor(Math.random()*word1.length)];
+    var secondWord = word2[Math.floor(Math.random()*word2.length)];
+
+    var partido = firstWord + " " + secondWord;
+
+    document.getElementById("partido").innerHTML = partido;
+
+  }
+
+</script>
+
+</body>
+
+
+
+</html>
