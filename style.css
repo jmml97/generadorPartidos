@@ -8,6 +8,12 @@ body {
   margin: auto;
 }
 
+@media (max-width: 600px)  {
+  body {
+    width: 90%;
+  }
+}
+
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -43,6 +49,13 @@ p {
   font-weight: 700;
   color: #253939;
 }
+
+@media (max-width: 600px)  {
+  #generate {
+    width: 90%;
+  }
+}
+
 
 h5 {
   color: white;
