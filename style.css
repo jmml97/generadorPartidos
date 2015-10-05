@@ -48,6 +48,7 @@ p {
   font-family: Montserrat;
   font-weight: 700;
   color: #253939;
+  cursor: pointer;
 }
 
 @media (max-width: 600px)  {
