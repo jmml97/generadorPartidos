@@ -49,6 +49,7 @@ p {
   font-weight: 700;
   color: #253939;
   cursor: pointer;
+  -webkit-appearance: none;
 }
 
 @media (max-width: 600px)  {
