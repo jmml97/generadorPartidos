@@ -21,6 +21,11 @@
 
   <p>Y tu nuevo partido de izquierdas es: </p>
   <h1 id="partido"></h1>
+  
+  <div id="tweetBtn">
+    <a class="twitter-share-button" href="http://twitter.com/share" data-url="http://test.com" data-text="REPLACEME">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </div>
 
 </div>
 
@@ -40,6 +45,20 @@ $(document).ready(function() {
   $("#generate").click(function(){
       $("#partidoBlock").fadeIn("slow");
   });
+  });
+  
+$('#generate').on('click', function(ev) {
+      ev.preventDefault();
+      // Remove existing iframe
+      $('#tweetBtn iframe').remove();
+      // Generate new markup
+      var tweetBtn = $('<a></a>')
+          .addClass('twitter-share-button')
+          .attr('href', 'http://twitter.com/share')
+          .attr('data-url', 'http://jmml97.github.io/generadorPartidos/')
+          .attr('data-text', 'Mi nuevo partido de izquierdas es: ' + document.getElementById("partido").innerHTML + '. Genera el tuyo propio en: ');
+      $('#tweetBtn').append(tweetBtn);
+      twttr.widgets.load();
   });
 
 
