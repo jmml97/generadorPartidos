@@ -52,6 +52,12 @@ p {
   -webkit-appearance: none;
 }
 
+#tweetBtn {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
 @media (max-width: 600px)  {
   #generate {
     width: 90%;
