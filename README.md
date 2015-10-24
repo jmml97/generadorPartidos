@@ -2,7 +2,7 @@
 
 Versión original en http://jmml97.github.io/generadorPartidos/
 
-Esta verión disponible en dos sabores: 
+Esta versión disponible en dos sabores: 
  - [Derechas](http://jj.github.io/generadorPartidos/?derechas)
  - [Izquierdas](http://jj.github.io/generadorPartidos/)
 
