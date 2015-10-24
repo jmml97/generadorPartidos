@@ -12,24 +12,25 @@ $(document).ready(function() {
 	word1 = data[lado][0];
 	word2 = data[lado][1];
     });
+
     $("#generate").click(function(){
 	$("#partidoBlock").fadeIn("slow");
     });
-});
- 
-$('#generate').on('click', function(ev) {
-    ev.preventDefault();
-    // Remove existing iframe
-    $('#tweetBtn iframe').remove();
-    // Generate new markup
-    var tweetBtn = $('<a></a>')
-	.addClass('twitter-share-button')
-	.attr('href', 'http://twitter.com/share')
-	.attr('data-url', 'http://jmml97.github.io/generadorPartidos/')
-	.attr('data-text', 'Mi nuevo partido de ' + lado + ' es: ' + document.getElementById("partido").innerHTML + '. Genera el tuyo propio en: ');
-    $('#tweetBtn').append(tweetBtn);
+
+    $('#generate').on('click', function(ev) {
+	ev.preventDefault();
+	// Remove existing iframe
+	$('#tweetBtn iframe').remove();
+	// Generate new markup
+	var tweetBtn = $('<a></a>')
+	    .addClass('twitter-share-button')
+	    .attr('href', 'http://twitter.com/share')
+	    .attr('data-url', 'http://jmml97.github.io/generadorPartidos/')
+	    .attr('data-text', 'Mi nuevo partido de ' + lado + ' es: ' + document.getElementById("partido").innerHTML + '. Genera el tuyo propio en: ');
+	$('#tweetBtn').append(tweetBtn);
     twttr.widgets.load();
- });
+    });
+});
 
  
  
