@@ -26,7 +26,7 @@ $('#generate').on('click', function(ev) {
 	.addClass('twitter-share-button')
 	.attr('href', 'http://twitter.com/share')
 	.attr('data-url', 'http://jmml97.github.io/generadorPartidos/')
-	.attr('data-text', 'Mi nuevo partido de " + lado + " es: ' + document.getElementById("partido").innerHTML + '. Genera el tuyo propio en: ');
+	.attr('data-text', 'Mi nuevo partido de ' + lado + ' es: ' + document.getElementById("partido").innerHTML + '. Genera el tuyo propio en: ');
     $('#tweetBtn').append(tweetBtn);
     twttr.widgets.load();
  });
