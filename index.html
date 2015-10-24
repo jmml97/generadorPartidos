@@ -1,26 +1,25 @@
 <!doctype html>
 <html>
-<head>
+  <head>
 
-<meta charset="UTF-8">
-<title>Generador de partidos</title>
-<script type="text/javascript" src="main.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="generator.js"></script>
-<link rel="stylesheet" type="text/css" href="style.css">
-<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-
-
-</head>
-<body>
-
-  <h1>Generador de partidos de izquierdas</h1>
-  <p>¡Están de moda! ¿Por qué no tener el tuyo propio? ¡Crea tu propio partido de izquierdas, fácil y rápido!</p>
-  
-  <div id="partidoBlock" style="display: none;" >
+    <meta charset="UTF-8">
+    <title>Generador de partidos</title>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="generator.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     
+    
+  </head>
+  <body>
 
-    <p>Y tu nuevo partido de izquierdas es: </p>
+    <h1>Generador de partidos de  <script>document.write(lado)</script></h1>
+    <p>¡Están de moda! ¿Por qué no tener el tuyo propio? ¡Crea tu propio partido de <script>document.write(lado)</script>, fácil y rápido!</p>
+    
+    <div id="partidoBlock" style="display: none;" >
+      
+    <p>Y tu nuevo partido de <script>document.write(lado)</script> es: </p>
     <h1 id="partido"></h1>
     
     <div id="tweetBtn">
