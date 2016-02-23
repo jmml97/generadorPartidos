@@ -1,13 +1,16 @@
 {"izquierdas":
  [
-     ["Ahora", "En común", "Podemos", "Unidos", "Venceremos", "A la Moncloa", "Juntos, ", "Ganemos", "Al frente", "Unidad", "Adelante", "Vamos", "Convergencia", "Unión del pueblo" ],
+     ["Ahora", "En común", "Podemos", "Unidos", "Venceremos", "A la Moncloa", "Juntos, ", "Ganemos", "Al frente", "Unidad", "Adelante", "Vamos", "Convergencia", "Unión del pueblo", "Participa", "Acuerdo", "Ganar", "Decide", "Entre todos"],
      ["la izquierda", "juntos", "sí se puede", "por la democracia", "sí que se puede", "por los trabajadores", "es posible",
-      "en común", "toma la palabra", "por el pueblo", "por la dignidad", "por el cambio" ]
+      "en común", "toma la palabra", "por el pueblo", "por la dignidad", "por el cambio", "decide", "podemos"]
  ],
 
  "derechas":
  [
-     ["Frente","Unión","Comunión", "Fuerza", "Libertad" ],
-     ["y Patria","por la Patria","y Orden","por la Justicia","y Democracia","de los Patriotas"]
- ]
+     ["Frente","Unión","Comunión","Fuerza","Libertad","Tradición","Unidad","Renovación","Alianza","Movimiento","Plataforma","Solidaridad","Acción","Alternativa"],
+     ["y Patria","por la Patria","y Orden","por la Justicia","y Democracia","de los Patriotas","Español_","Católic@","Liberal","Cristian@","Nacional","Auténtic@"]
+ ],
+ 
+ "sufijos_femeninos":   ["a", "ión", "ad"],
+ "sufijos_verbos":      ["ar", "emos", "amos", "se puede", "es posible", "cipa", "ide"]
 }
